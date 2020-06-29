@@ -2,6 +2,10 @@ const moviesRecent = movieDatabase.Movies.filter((item) => {
     return item.Year >= 2014
 })
 
+// {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+// {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+// Onderstaande filters moeten nog korter kunnen
+
 const moviesAvengers = movieDatabase.Movies.filter((item) => {
     return item.Title.includes("Avengers")
 })
@@ -18,9 +22,13 @@ const moviesBatman = movieDatabase.Movies.filter((item) => {
     return item.Title.includes("Batman")
 })
 
+// {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+// {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+
 
 const addMoviesToDom = (whateverfilter) => {
     const htmlMovieContainer = document.getElementById("movie-html-container-id");
+
     // Maakt container eerst leeg
     htmlMovieContainer.innerHTML = "";
 
