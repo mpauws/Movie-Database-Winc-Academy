@@ -22,14 +22,20 @@ const moviesBatman = movieDatabase.Movies.filter((item) => {
     return item.Title.includes("Batman")
 })
 
-// {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
-// {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+// {{{{{{{{{{{{}}}}}}}}}}}}
+// Kortere manier van Bram:
 
+/* 
+const filterMovieByTitle = function (titlepart) {
+    const moviesWithTitlePart = allMovies.filter(movie => movie.Title.includes(titlepart));
+    addMoviesToDom(moviesWithcTitlePart);
+} */
+
+// {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+// {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
 
 const addMoviesToDom = (whateverfilter) => {
     const htmlMovieContainer = document.getElementById("movie-html-container-id");
-
-    // Maakt container eerst leeg
     htmlMovieContainer.innerHTML = "";
 
     for (let i = 0; i < whateverfilter.length; i++) {
@@ -76,5 +82,3 @@ allRadioButtons.forEach((filterButton) => {
     )
 }
 )
-
-
