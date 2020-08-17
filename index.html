@@ -1,51 +1,45 @@
 <!DOCTYPE html>
 <html lang="nl">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Moovies Database</title>
 
-<head>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <script defer src="movies.js"></script>
+      <script defer src="script.js"></script>
+   </head>
 
-    <meta charset="UTF-8">
-    <title>Pagina Titel</title>
+   <body>
+      <h1 class="title-bar">Mooovies</h1>
+      <!-- Nav met radiobuttons -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script defer src="movies.js"></script>
-    <script defer src="script.js"></script>
+      <nav class="filter-bar">
+         <input type="radio" id="all-movies" name="filter-buttons" value="all-movies" />
+         <label for="all-movies">All Movies</label><br />
 
-</head>
+         <input type="radio" id="recent-movies" name="filter-buttons" value="recent-movies" />
+         <label for="recent-movies">Recent Movies</label><br />
 
-<body>
+         <input type="radio" id="avengers-movies" name="filter-buttons" value="avengers-movies" />
+         <label for="avengers-movies">Avengers</label><br />
 
+         <input type="radio" id="xmen-movies" name="filter-buttons" value="xmen-movies" />
+         <label for="xmen-movies">X-Men</label><br />
 
-    <h1> Wincflix</h1>
-    <!-- Nav met radiobuttons -->
+         <input type="radio" id="princess-movies" name="filter-buttons" value="princess-movies" />
+         <label for="princess-movies">Princess</label><br />
 
-    <nav>
-        <input type="radio" id="recent-movies" name="filter-buttons" value="recent-movies">
-        <label for="recent-movies">Recent Movies</label><br>
+         <input type="radio" id="batman-movies" name="filter-buttons" value="batman-movies" />
+         <label for="batman-movies">Batman</label><br />
+      </nav>
 
-        <input type="radio" id="avengers-movies" name="filter-buttons" value="avengers-movies">
-        <label for="avengers-movies">Avengers</label><br>
+      <div class="subtitle-container">
+         <h2 class="subtitle">Welcome</h2>
+      </div>
 
-        <input type="radio" id="xmen-movies" name="filter-buttons" value="xmen-movies">
-        <label for="xmen-movies">X-Men</label><br>
-
-        <input type="radio" id="princess-movies" name="filter-buttons" value="princess-movies">
-        <label for="princess-movies">Princess</label><br>
-
-        <input type="radio" id="batman-movies" name="filter-buttons" value="batman-movies">
-        <label for="batman-movies">Batman</label><br>
-    </nav>
-
-
-    <!-- Lijst met films -->
-
-    <div>
-        <ul id="movie-html-container-id">
-
-        </ul>
-    </div>
-
-
-</body>
-
+      <div class="movie-container-html">
+         <ul id="movie-html-container-id"></ul>
+      </div>
+   </body>
 </html>
